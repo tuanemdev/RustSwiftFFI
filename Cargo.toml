@@ -1,6 +1,18 @@
 [package]
-name = "spm_rust"
+name = "rust_swift"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+crate-type = ["cdylib", "staticlib"]
+name = "rust_swift"
+
+[[bin]]
+name = "uniffi-bindgen-swift"
+path = "uniffi-bindgen-swift.rs"
+
 [dependencies]
+uniffi = { version = "0.31.0", features = ["cli"] }
+
+[build-dependencies]
+uniffi = { version = "0.31.0", features = ["build"] }
