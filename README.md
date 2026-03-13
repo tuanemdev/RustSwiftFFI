@@ -134,3 +134,9 @@ let greeting = sayHiFromRust()
 ## Example Implementation
 
 See the [RustSwiftFFI-SPM](https://github.com/tuanemdev/RustSwiftFFI-SPM) repository for a complete example of how to integrate this XCFramework into a Swift Package Manager project.
+
+---
+
+## Documentation & References
+
+[UniFFI-rs](https://github.com/mozilla/uniffi-rs) – Official Mozilla UniFFI documentation and source code
