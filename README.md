@@ -18,7 +18,7 @@ A Swift Package that exposes Rust logic via UniFFI, distributed as an XCFramewor
 
 ```bash
 git clone https://github.com/tuanemdev/RustSwiftFFI.git
-cd spm_rust
+cd RustSwiftFFI
 ```
 
 ### 2. Run the build script
@@ -128,3 +128,9 @@ Simply call the exposed functions directly from your own Swift code:
 let result = addCoreLogic(left: 1, right: 2)
 let greeting = sayHiFromRust()
 ```
+
+---
+
+## Example Implementation
+
+See the [RustSwiftFFI-SPM](https://github.com/tuanemdev/RustSwiftFFI-SPM) repository for a complete example of how to integrate this XCFramework into a Swift Package Manager project.
