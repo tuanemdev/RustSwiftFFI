@@ -17,7 +17,7 @@ A Swift Package that exposes Rust logic via UniFFI, distributed as an XCFramewor
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/tuanemdev/RustSwiftFFI.git
+git clone https://github.com/OpenSwiftXO/RustSwiftFFI.git
 cd RustSwiftFFI
 ```
 
@@ -104,14 +104,14 @@ Upload `rust_swiftFFI.xcframework.zip` to a publicly accessible URL, such as a *
 
 1. Create a new GitHub Release for your repository
 2. Attach `rust_swiftFFI.xcframework.zip` as a release asset
-3. Copy the download URL (e.g. `https://github.com/your-org/your-repo/releases/download/1.0.0/rust_swiftFFI.xcframework.zip`)
+3. Copy the download URL (e.g. `https://github.com/OpenSwiftXO/RustSwiftFFI/releases/download/1.0.0/rust_swiftFFI.xcframework.zip`)
 
 ### Step 4 — Declare the binary target in `Package.swift`
 
 ```swift
 .binaryTarget(
     name: "rust_swiftFFI",
-    url: "https://github.com/your-org/your-repo/releases/download/1.0.0/rust_swiftFFI.xcframework.zip",
+    url: "https://github.com/OpenSwiftXO/RustSwiftFFI/releases/download/1.0.0/rust_swiftFFI.xcframework.zip",
     checksum: "a1b2c3d4e5f6..."  // paste the hash from Step 2
 )
 ```
@@ -133,7 +133,7 @@ let greeting = sayHiFromRust()
 
 ## Example Implementation
 
-See the [RustSwiftFFI-SPM](https://github.com/tuanemdev/RustSwiftFFI-SPM) repository for a complete example of how to integrate this XCFramework into a Swift Package Manager project.
+See the [RustSwiftFFI-SPM](https://github.com/OpenSwiftXO/RustSwiftFFI-SPM) repository for a complete example of how to integrate this XCFramework into a Swift Package Manager project.
 
 ---
 
